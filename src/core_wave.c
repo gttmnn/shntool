@@ -166,14 +166,14 @@ bool verify_wav_header_internal(wave_info *info,bool verbose)
     return FALSE;
   }
 
-  switch (info->wave_format) {
+  /* switch (info->wave_format) {
     case WAVE_FORMAT_PCM:
       break;
     default:
       st_warning("unsupported format 0x%04x (%s) while processing file: [%s]",
             info->wave_format,format_to_str(info->wave_format),info->filename);
       return FALSE;
-  }
+  } */
 
   if (!read_le_short(info->input,&info->channels)) {
     st_warning("reached end of file reading channels while processing file: [%s]",info->filename);
