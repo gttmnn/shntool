@@ -1,0 +1,9 @@
+.DS_Store
+config.log
+config.status
+*.o
+src/.deps
+src/shntool
+src/glue_modes.c
+src/glue_formats.c
+Makefile
